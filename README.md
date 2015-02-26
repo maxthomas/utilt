@@ -1,6 +1,11 @@
 # utilt
 This library attempts to make Java a little less painful.
 
+## `AutoCloseableIterator`
+Combination of `Iterator<K>` and `AutoCloseable`, inspired by C#'s
+[IDisposable](http://msdn.microsoft.com/en-us/library/system.idisposable.aspx)
+interface.
+
 ## `edu.jhu.hlt.utilt.io`
 Contains classes that can wrap `java.nio.file.Path` objects, checking
 if the objects are directories or missing. Useful for avoiding calls to
@@ -16,6 +21,6 @@ Latest Maven dependency
 <dependency>
   <groupId>edu.jhu.hlt</groupId>
   <artifactId>utilt</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 </dependency>
 ```
