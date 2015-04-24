@@ -21,6 +21,6 @@ Latest Maven dependency
 <dependency>
   <groupId>edu.jhu.hlt</groupId>
   <artifactId>utilt</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.1</version>
 </dependency>
 ```
