@@ -10,7 +10,7 @@
 
   <groupId>edu.jhu.hlt</groupId>
   <artifactId>utilt</artifactId>
-  <version>1.4.0</version>
+  <version>1.4.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Utilt</name>
