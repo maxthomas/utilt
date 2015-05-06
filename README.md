@@ -1,6 +1,10 @@
 # utilt
 This library attempts to make Java a little less painful.
 
+## `SystemErrDisabler`
+Toggle writing to `System.err` - useful if tools you don't own
+have calls that aren't worth keeping around.
+
 ## `AutoCloseableIterator`
 Combination of `Iterator<K>` and `AutoCloseable`, inspired by C#'s
 [IDisposable](http://msdn.microsoft.com/en-us/library/system.idisposable.aspx)
@@ -21,6 +25,6 @@ Latest Maven dependency
 <dependency>
   <groupId>edu.jhu.hlt</groupId>
   <artifactId>utilt</artifactId>
-  <version>1.3.1</version>
+  <version>1.4.0</version>
 </dependency>
 ```
