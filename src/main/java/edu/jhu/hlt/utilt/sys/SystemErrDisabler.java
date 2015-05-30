@@ -4,8 +4,11 @@
  */
 package edu.jhu.hlt.utilt.sys;
 
+import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Disable/enable System.err calls.
@@ -25,12 +28,23 @@ public class SystemErrDisabler {
 
   /**
    * Disable writing to System.err.
+   *
+   * @throws UnsupportedEncodingException if the system does not support {@link StandardCharsets#UTF_8}.
    */
-  public void disable() {
-    System.setErr(new PrintStream(new OutputStream() {
-      public void write(int b) {
-      }
-    }));
+  public void disable() throws UnsupportedEncodingException {
+    PrintStream ps = new PrintStream(new EmptyOutputStream(), false, StandardCharsets.UTF_8.toString());
+    System.setErr(ps);
+  }
+
+  private static class EmptyOutputStream extends OutputStream {
+
+    /* (non-Javadoc)
+     * @see java.io.OutputStream#write(int)
+     */
+    @Override
+    public void write(int b) throws IOException {
+
+    }
   }
 
   /**
