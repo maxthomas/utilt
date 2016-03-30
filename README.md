@@ -1,4 +1,6 @@
 # utilt
+[![Circle CI](https://circleci.com/gh/maxthomas/utilt.svg?style=svg)](https://circleci.com/gh/maxthomas/utilt)
+
 This library attempts to make Java a little less painful.
 
 ## `SystemErrDisabler`
