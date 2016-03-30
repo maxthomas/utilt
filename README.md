@@ -1,7 +1,19 @@
 # utilt
 [![Circle CI](https://circleci.com/gh/maxthomas/utilt.svg?style=svg)](https://circleci.com/gh/maxthomas/utilt)
+![Maven Badges](https://maven-badges.herokuapp.com/maven-central/edu.jhu.hlt/utilt/badge.svg)
+[![javadoc.io](https://javadocio-badges.herokuapp.com/edu.jhu.hlt/utilt/badge.svg)](http://www.javadoc.io/doc/edu.jhu.hlt/utilt/)
 
 This library attempts to make Java a little less painful.
+
+Latest Maven dependency
+---
+```xml
+<dependency>
+  <groupId>edu.jhu.hlt</groupId>
+  <artifactId>utilt</artifactId>
+  <version>2.0.0</version>
+</dependency>
+```
 
 ## `SystemErrDisabler`
 Toggle writing to `System.err` - useful if tools you don't own
@@ -20,13 +32,3 @@ Java's `Files` class everywhere.
 ## `LoggedUncaughtExceptionHandler`
 Implementation of `UncaughtExceptionHandler` that uses `slf4j` to log
 the exception.
-
-Latest Maven dependency
----
-```xml
-<dependency>
-  <groupId>edu.jhu.hlt</groupId>
-  <artifactId>utilt</artifactId>
-  <version>1.4.1</version>
-</dependency>
-```

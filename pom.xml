@@ -8,8 +8,9 @@
     <version>2</version>
   </parent>
 
+  <groupId>edu.jhu.hlt</groupId>
   <artifactId>utilt</artifactId>
-  <version>1.4.2-SNAPSHOT</version>
+  <version>2.0.0</version>
   <packaging>jar</packaging>
 
   <name>Utilt</name>
